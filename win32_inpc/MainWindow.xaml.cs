@@ -25,11 +25,9 @@ namespace win32_inpc
         public MainWindow()
         {
             this.InitializeComponent();
+            
+            MainFrame.NavigateToType(typeof(MainPage), null, null);
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
-        {
-            myButton.Content = "Clicked";
-        }
     }
 }
